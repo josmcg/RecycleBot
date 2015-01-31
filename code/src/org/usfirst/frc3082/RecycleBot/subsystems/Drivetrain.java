@@ -44,5 +44,11 @@ public class Drivetrain extends Subsystem {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
     }
+    public void drive(double magnitude, double direction, double rotation){
+    	robotDrive.mecanumDrive_Polar(magnitude, direction, rotation);
+    }
+    public void stop(){
+    	robotDrive.mecanumDrive_Polar(0, 0, 0);
+    }
 }
 
