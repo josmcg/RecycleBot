@@ -12,7 +12,7 @@
 package org.usfirst.frc3082.RecycleBot.subsystems;
 
 import org.usfirst.frc3082.RecycleBot.RobotMap;
-import org.usfirst.frc3082.RecycleBot.commands.*;
+//import org.usfirst.frc3082.RecycleBot.commands.*;
 import edu.wpi.first.wpilibj.*;
 
 import edu.wpi.first.wpilibj.command.Subsystem;

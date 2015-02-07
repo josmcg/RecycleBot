@@ -13,7 +13,6 @@ package org.usfirst.frc3082.RecycleBot.subsystems;
 
 import org.usfirst.frc3082.RecycleBot.Robot;
 import org.usfirst.frc3082.RecycleBot.RobotMap;
-import org.usfirst.frc3082.RecycleBot.commands.*;
 import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
@@ -48,11 +47,11 @@ public class Elevator extends Subsystem {
     public void getPosition(){
     	currentPosition = elevatorEncoder.getDistance() * radius;
     }
-    public void elevatorDown(){
-    	Robot.elevator.elevatorDown();
+    public void move(double direction){
+    	Robot.elevator.elevatorMotorController.set(direction);
     }
-    public void elevatorUp(){
-    	Robot.elevator.elevatorUp();
+    public void stop(){
+    	Robot.elevator.elevatorMotorController.set(0);
     }
 }
 

@@ -14,7 +14,7 @@ package org.usfirst.frc3082.RecycleBot;
 
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.*;
-import java.util.Vector;
+
 
 /**
  * The RobotMap is a mapping from the ports sensors and actuators are wired into
