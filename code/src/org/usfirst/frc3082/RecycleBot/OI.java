@@ -63,6 +63,10 @@ public class OI {
         JoystickButton BButton = new JoystickButton(joystick1, 2);
         JoystickButton XButton = new JoystickButton(joystick1,3);
         JoystickButton YButton = new JoystickButton(joystick1,4);
+        
+        AButton.whenPressed(new ElevatorUp());
+        BButton.whenPressed(new ElevatorDown());
+        
 
 	    
         // SmartDashboard Buttons

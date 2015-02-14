@@ -1,5 +1,7 @@
 package org.usfirst.frc3082.RecycleBot.commands;
 
+import org.usfirst.frc3082.RecycleBot.Robot;
+
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
@@ -10,6 +12,7 @@ public class ElevatorDown extends Command {
     public ElevatorDown() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
+    	requires(Robot.elevator);
     }
 
     // Called just before this Command runs the first time
@@ -18,6 +21,7 @@ public class ElevatorDown extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+    	Robot.elevator.move(-1);
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -27,6 +31,7 @@ public class ElevatorDown extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
+    	Robot.elevator.stop();
     }
 
     // Called when another command which requires one or more of the same
